@@ -76,6 +76,23 @@
     # (all of the above configured with standalone fallbacks to localhost)
 
 
+## charms needed
+
+- rss-backend
+  -relations
+    - cassandra (uses astyanix)
+    - backend to edge
+  - libs: karyon, ribbon, blitz4j
+- rss-edge
+  - relations
+    - edge to backend (uses hystrix and ribbon)
+- eureka-client (sub)
+  - config (eventual relation) to eureka server
+- archaius-client (sub)
+  - config (eventual relation) to archaius server
+- servo-client (sub)
+  - config (eventual relation) to servo server
+
 ---
 
 # next steps... 
