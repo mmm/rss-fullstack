@@ -1,0 +1,22 @@
+#!/bin/bash
+
+juju bootstrap
+
+juju deploy cassandra
+juju deploy --repository charms --config etc/rss.yaml local:rss rss-backend
+#juju add-relation cassandra rss-backend
+#juju add-relation eureka rss-backend
+
+## edge
+juju deploy --repository charms --config etc/rss.yaml local:rss rss-edge
+#juju add-relation rss-backend rss-edge
+#juju add-relation eureka rss-edge
+
+## eureka
+#juju deploy --repository charms local:eureka-client 
+#juju add-relation rss-backend eureka-client
+#juju add-relation rss-edge eureka-client
+
+juju deploy --repository charms --config etc/eureka.yaml local:rss eureka
+#juju add-relation eureka eureka-client
+

@@ -1,0 +1,3 @@
+eureka:
+  build_eureka: True
+  tomcat_port: "80"
