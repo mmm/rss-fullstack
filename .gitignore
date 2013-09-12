@@ -1,3 +1,6 @@
 tmp
 charms/precise/cassandra
 charms/precise/rss
+charms/precise/ruby
+charms/precise/node-app
+

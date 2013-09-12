@@ -1,4 +1,4 @@
-rss-backend:
+rss-middletier:
   build_rss: True
   tomcat_port: "80"
 rss-edge:
