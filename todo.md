@@ -1,11 +1,7 @@
 
-- eureka peers?
 
-- rss <-> cassandra relation
-- rss <-> eureka relation
+- debug rss <-> cassandra relation
 
-- middletier upstart scripts
-
-- edge?
+- edge
 - edge upstart scripts
-- separate charm?
+

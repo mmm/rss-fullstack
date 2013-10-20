@@ -5,7 +5,7 @@ juju bootstrap
 juju deploy cassandra
 juju deploy --repository charms local:eureka
 juju deploy --repository charms --config etc/rss.yaml local:rss rss-middletier
-juju add-relation cassandra:database rss-middletier
+#juju add-relation cassandra:database rss-middletier
 #juju add-relation eureka rss-middletier
 
 ## edge
