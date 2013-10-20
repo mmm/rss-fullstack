@@ -20,3 +20,6 @@ juju deploy --repository charms --config etc/rss.yaml local:rss rss-middletier
 
 #juju add-relation eureka eureka-client
 
+# debugging
+juju expose eureka
+juju expose rss-middletier
